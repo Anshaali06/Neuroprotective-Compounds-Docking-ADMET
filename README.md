@@ -144,10 +144,10 @@ The computational study identified Quercetin, Curcumin, and EGCG as promising nu
 * MM-PBSA/MM-GBSA binding energy calculations
 * In vitro validation studies
  ## References
-Trott O, Olson AJ. AutoDock Vina: Improving the speed and accuracy of docking. Journal of Computational Chemistry, 2010.
-Daina A, Michielin O, Zoete V. SwissADME: A free web tool to evaluate pharmacokinetics and drug-likeness of small molecules. Scientific Reports, 2017.
-The PyMOL Molecular Graphics System.
-Protein Data Bank (PDB). https://www.rcsb.org
-PubChem Database. https://pubchem.ncbi.nlm.nih.gov
-* In vivo efficacy assessment
+* Trott O, Olson AJ. AutoDock Vina: Improving the speed and accuracy of docking. Journal of Computational Chemistry, 2010.
+* Daina A, Michielin O, Zoete V. SwissADME: A free web tool to evaluate pharmacokinetics and drug-likeness of small molecules. Scientific Reports, 2017.
+* The PyMOL Molecular Graphics System.
+* Protein Data Bank (PDB). https://www.rcsb.org
+* PubChem Database. https://pubchem.ncbi.nlm.nih.gov
+
 
