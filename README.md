@@ -13,9 +13,9 @@ This project focuses on the computational screening of six neuroprotective compo
 7. Visualized protein–ligand interactions of the top-performing compound using PyMOL.
 
 ## Tools Used
-- PubChem (Ligand retrieval)
-- Protein Data Bank (PDB) (Protein structure retrieval)
-- Open Babel (SDF to PDB file conversion)
-- PyMOL (Protein preparation and visualization)
-- AutoDock Vina (Molecular docking)
-- SwissADME (ADMET prediction)
+- PubChem 
+- Protein Data Bank (PDB) 
+- Open Babel 
+- PyMOL 
+- AutoDock Vina 
+- SwissADME 
