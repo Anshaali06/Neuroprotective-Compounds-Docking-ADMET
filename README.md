@@ -138,7 +138,7 @@ The computational study identified Quercetin, Curcumin, and EGCG as promising nu
 * SwissADME
 * PubChem
 * Protein Data Bank (PDB)
-* Open Bablu
+* Open Babel
 
 ## Future Work
 
