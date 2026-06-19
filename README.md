@@ -3,6 +3,9 @@ An in-silico molecular docking and ADMET analysis study evaluating the binding a
 ## Project Overview
 This project focuses on the computational screening of six neuroprotective compounds (DHA, EPA, Curcumin, Resveratrol, Quercetin, and EGCG) against a pesticide-induced neurotoxicity target protein (PDB ID: 4EY7). Molecular docking was performed using AutoDock Vina to evaluate the binding affinity of the selected compounds toward the target protein. The docking results were further supported by ADMET analysis to assess the drug-likeness and pharmacokinetic properties of the compounds. Protein–ligand interactions of the top-performing candidate were visualized using PyMOL. Comparative analysis identified EGCG as the strongest binder, followed by Quercetin and Curcumin, highlighting their potential as neuroprotective candidates for further investigation.
 
+## Objective
+To identify potential natural inhibitors of Acetylcholinesterase (AChE) through molecular docking and pharmacokinetic analysis.
+
  ## Methodology
 1. Retrieved six neuroprotective compounds (DHA, EPA, Curcumin, Resveratrol, Quercetin, and EGCG) from PubChem.
 2. Retrieved the target protein structure (PDB ID: 4EY7) from the Protein Data Bank.
