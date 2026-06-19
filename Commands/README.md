@@ -46,5 +46,8 @@ ray
 png Quercetin_Docking_Final.png, dpi=300
 ```
 
+## Open Babel
+
+```powershell
 obabel ligand.sdf -O ligand.pdb
 ```
