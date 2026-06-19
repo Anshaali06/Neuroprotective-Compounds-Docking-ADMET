@@ -26,10 +26,11 @@ The following nutraceutical compounds were selected:
 ## Methodology
 
 ### 1. Protein Preparation
-
-* Downloaded the crystal structure of AChE (4EY7) from PDB.
-* Removed unnecessary molecules and prepared the receptor structure.
-* Converted the receptor into PDBQT format using AutoDock Tools.
+* The crystal structure of Acetylcholinesterase (PDB ID: 4EY7) was downloaded from the Protein Data Bank.
+* Water molecules and unwanted heteroatoms were removed.
+* Polar hydrogen atoms were added using AutoDock Tools.
+*  Gasteiger charges were assigned to the receptor.
+* The prepared receptor was saved in PDBQT format for docking studies.
 
 ### 2. Ligand Preparation
 
