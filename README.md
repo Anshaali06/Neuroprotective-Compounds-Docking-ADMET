@@ -21,7 +21,7 @@ The following nutraceutical compounds were selected:
 * DHA (Docosahexaenoic Acid)
 * EPA (Eicosapentaenoic Acid)
 
----
+
 
 ## Methodology
 
@@ -74,7 +74,7 @@ Top-performing compounds were analyzed using SwissADME for:
 * Drug-likeness
 * Pharmacokinetic properties
 
----
+
 
 ## Docking Results
 
@@ -87,7 +87,7 @@ Top-performing compounds were analyzed using SwissADME for:
 | DHA         | -6.415                      |
 | EPA         | -6.117                      |
 
----
+
 
 ## ADMET Analysis
 
@@ -99,7 +99,7 @@ Top-performing compounds were analyzed using SwissADME for:
 | Lipinski Violations   | 2    | 0         | 0        |
 | Bioavailability Score | 0.17 | 0.55      | 0.55     |
 
----
+
 
 ## Key Findings
 
@@ -121,13 +121,11 @@ Visualization included:
 * Binding pocket inspection
 * Active site interaction analysis
 
----
 
 ## Conclusion
 
 The computational study identified Quercetin, Curcumin, and EGCG as promising nutraceutical inhibitors of Acetylcholinesterase. Among these, Quercetin demonstrated the most balanced profile by combining strong binding affinity with favorable pharmacokinetic characteristics. These findings suggest that Quercetin may serve as a potential lead molecule for future experimental validation and drug development studies.
 
----
 
 ## Software Used
 
@@ -137,8 +135,7 @@ The computational study identified Quercetin, Curcumin, and EGCG as promising nu
 * SwissADME
 * PubChem
 * Protein Data Bank (PDB)
-
----
+* Open Bablu
 
 ## Future Work
 
