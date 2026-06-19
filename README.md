@@ -33,10 +33,12 @@ The following nutraceutical compounds were selected:
 
 ### 2. Ligand Preparation
 
-* Retrieved ligand structures from PubChem.
-* Converted structures into PDBQT format.
-* Defined rotatable bonds and prepared ligands for docking.
-
+*  The chemical structures of DHA, EPA, Curcumin, Resveratrol, Quercetin, and EGCG were retrieved from the PubChem database in SDF format.
+* The SDF files were converted to PDB format using Open Babel.
+* The PDB structures were imported into AutoDock Tools (ADT).
+* Hydrogen atoms were added and Gasteiger charges were assigned.
+* Rotatable bonds were defined for each ligand.
+* The prepared ligands were saved in PDBQT format for molecular docking studies.
 ### 3. Grid Box Generation
 
 * Binding site coordinates were determined from the co-crystallized ligand.
