@@ -19,3 +19,13 @@ This project focuses on the computational screening of six neuroprotective compo
 - PyMOL 
 - AutoDock Vina 
 - SwissADME 
+
+## Docking Results
+| Compound | Binding Affinity (kcal/mol) |
+|----------|----------------------------|
+| EGCG | -9.258 |
+| Quercetin | -8.978 |
+| Curcumin | -8.806 |
+| Resveratrol | -7.321 |
+| DHA | -6.400 |
+| EPA | -6.117 |
