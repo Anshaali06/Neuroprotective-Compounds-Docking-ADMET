@@ -31,7 +31,7 @@ Molecular docking was performed using AutoDock Vina v1.2.4 to evaluate the bindi
 
 ## Interpretation
 
-More negative binding affinity values indicate stronger predicted binding interactions with the target protein. EGCG exhibited the strongest binding affinity, followed by Quercetin and Curcumin, suggesting their potential as promising neuroprotective candidates for further investigation.
+More negative binding affinity values indicate stronger predicted binding interactions with the target protein. EGCG exhibited the strongest binding affinity.
 
 ## Output Files
 
