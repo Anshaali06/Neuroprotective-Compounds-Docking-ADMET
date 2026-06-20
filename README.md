@@ -43,7 +43,7 @@ The following nutraceutical compounds were selected:
 * The prepared ligands were saved in PDBQT format for molecular docking studies.
 
 ## Computational Workflow
-## Project Workflow
+
 
 ```text
 📚 Literature Review
@@ -125,9 +125,7 @@ Resveratrol > DHA > EPA)
 ```
 
 
-
-* Binding site coordinates were determined from the co-crystallized ligand.
-
+### 3. Grid Box Generation
 Grid Center:
 
 * X = -1.624
