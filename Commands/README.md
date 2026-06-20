@@ -54,7 +54,7 @@ $ligands = @(
 "EPA",
 "Resveratrol",
 "Quercetin",
-"EGCG"
+"EGCC"
 )
 
 foreach ($l in $ligands) {
