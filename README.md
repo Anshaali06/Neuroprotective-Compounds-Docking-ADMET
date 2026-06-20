@@ -41,6 +41,76 @@ The following nutraceutical compounds were selected:
 * Hydrogen atoms were added and Gasteiger charges were assigned.
 * Rotatable bonds were defined for each ligand.
 * The prepared ligands were saved in PDBQT format for molecular docking studies.
+
+## Computational Workflow
+
+🎯 Target Selection
+(Acetylcholinesterase - PDB ID: 4EY7)
+        ↓
+🧬 Protein Retrieval
+(RCSB Protein Data Bank)
+        ↓
+🔧 Protein Preparation
+(Remove Water & Heteroatoms)
+(Add Polar Hydrogens)
+(Add Gasteiger Charges)
+        ↓
+💾 Receptor Saved as PDBQT
+        ↓
+🧪 Ligand Selection
+(DHA, EPA, Curcumin,
+Resveratrol, Quercetin, EGCG)
+        ↓
+📥 Ligand Retrieval
+(PubChem Database)
+        ↓
+🔄 SDF to PDB Conversion
+(Open Babel)
+        ↓
+⚙️ Ligand Preparation
+(Add Hydrogens)
+(Add Gasteiger Charges)
+(Define Rotatable Bonds)
+        ↓
+💾 Ligands Saved as PDBQT
+        ↓
+📦 Grid Box Generation
+(Binding Site from
+Co-crystallized Ligand)
+        ↓
+🎯 Molecular Docking
+(AutoDock Vina v1.2.4)
+        ↓
+📊 Binding Affinity Analysis
+        ↓
+🏆 Ranking of Compounds
+(EGCG > Quercetin >
+Curcumin > Resveratrol >
+DHA > EPA)
+        ↓
+💊 ADMET Analysis
+(SwissADME)
+        ↓
+📋 Drug-Likeness Evaluation
+(Lipinski Rule of Five)
+        ↓
+🌐 Pharmacokinetic Assessment
+(GI Absorption)
+(BBB Permeability)
+(Bioavailability)
+(P-gp Interaction)
+        ↓
+🥇 Lead Compound Selection
+(Quercetin)
+        ↓
+🖼️ Protein-Ligand Visualization
+(PyMOL)
+        ↓
+📑 Result Interpretation
+        ↓
+✅ Conclusion
+```
+
 ### 3. Grid Box Generation
 
 * Binding site coordinates were determined from the co-crystallized ligand.
