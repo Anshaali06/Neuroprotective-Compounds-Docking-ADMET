@@ -77,6 +77,8 @@ foreach ($l in $ligands) {
 
 ## 6. Visualization (PyMOL)
 
+`## PyMOL Visualization
+
 ```pymol
 hide everything
 
@@ -92,11 +94,23 @@ select pocket, byres (4EY7_clean1 within 4 of Quercetin_out)
 show sticks, pocket
 color green, pocket
 
+set stick_radius, 0.18
+
+hide labels
+deselect
+
 set cartoon_transparency, 0.2
 
 bg_color white
 
-ray
+ray 2500,1800
 
 png Quercetin_Docking_Final.png, dpi=300
+```
+
+Output:
+
+```text
+Selector: selection "pocket" defined with 128 atoms.
+ScenePNG: wrote 2500x1800 pixel image to file "Quercetin_Docking_Final.png".
 ```
