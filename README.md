@@ -224,10 +224,30 @@ The computational study identified Quercetin, Curcumin, and EGCG as promising nu
 * MM-PBSA/MM-GBSA binding energy calculations
 * In vitro validation studies
  ## References
-* Trott O, Olson AJ. AutoDock Vina: Improving the speed and accuracy of docking. Journal of Computational Chemistry, 2010.
-* Daina A, Michielin O, Zoete V. SwissADME: A free web tool to evaluate pharmacokinetics and drug-likeness of small molecules. Scientific Reports, 2017.
-* The PyMOL Molecular Graphics System.
-* Protein Data Bank (PDB). https://www.rcsb.org
-* PubChem Database. https://pubchem.ncbi.nlm.nih.gov
+## References
+
+1. Trott O, Olson AJ. *AutoDock Vina: Improving the speed and accuracy of docking with a new scoring function, efficient optimization, and multithreading.* Journal of Computational Chemistry. 2010;31(2):455–461.
+   DOI: https://doi.org/10.1002/jcc.21334
+
+2. Morris GM, Huey R, Lindstrom W, Sanner MF, Belew RK, Goodsell DS, Olson AJ. *AutoDock4 and AutoDockTools4: Automated docking with selective receptor flexibility.* Journal of Computational Chemistry. 2009;30(16):2785–2791.
+   DOI: https://doi.org/10.1002/jcc.21256
+
+3. Daina A, Michielin O, Zoete V. *SwissADME: A free web tool to evaluate pharmacokinetics, drug-likeness and medicinal chemistry friendliness of small molecules.* Scientific Reports. 2017;7:42717.
+   DOI: https://doi.org/10.1038/srep42717
+
+4. O'Boyle NM, Banck M, James CA, Morley C, Vandermeersch T, Hutchison GR. *Open Babel: An Open Chemical Toolbox.* Journal of Cheminformatics. 2011;3:33.
+   DOI: https://doi.org/10.1186/1758-2946-3-33
+
+5. Schrödinger, LLC. *The PyMOL Molecular Graphics System.*
+   Website: https://pymol.org/
+
+6. Berman HM, Westbrook J, Feng Z, Gilliland G, Bhat TN, Weissig H, et al. *The Protein Data Bank.* Nucleic Acids Research. 2000;28(1):235–242.
+   DOI: https://doi.org/10.1093/nar/28.1.235
+   Database: https://www.rcsb.org/
+
+7. Kim S, Chen J, Cheng T, Gindulyte A, He J, He S, et al. *PubChem in 2021: New data content and improved web interfaces.* Nucleic Acids Research. 2021;49(D1):D1388–D1395.
+   DOI: https://doi.org/10.1093/nar/gkaa971
+   Database: https://pubchem.ncbi.nlm.nih.gov/
+
 
 
