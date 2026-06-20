@@ -43,6 +43,8 @@ The following nutraceutical compounds were selected:
 * The prepared ligands were saved in PDBQT format for molecular docking studies.
 
 ## Computational Workflow
+## Project Workflow
+
 ```text
 📚 Literature Review
         ↓
@@ -52,66 +54,76 @@ The following nutraceutical compounds were selected:
 🧬 Protein Retrieval
 (RCSB Protein Data Bank)
         ↓
-🔧 Protein Preparation
-(Remove Water & Heteroatoms)
-(Add Polar Hydrogens)
-(Add Gasteiger Charges)
+🔧 Protein Preparation (PyMOL)
+• Remove Water Molecules
+• Remove Co-crystallized Ligand (E20)
+• Save Clean Protein Structure
         ↓
-💾 Receptor Saved as PDBQT
+⚙️ Receptor Preparation (AutoDock Tools)
+• Add Polar Hydrogens
+• Assign Gasteiger Charges
+• Save as PDBQT
         ↓
 🧪 Ligand Selection
-(DHA, EPA, Curcumin,
-Resveratrol, Quercetin, EGCG)
+• DHA
+• EPA
+• Curcumin
+• Resveratrol
+• Quercetin
+• EGCG
         ↓
 📥 Ligand Retrieval
 (PubChem Database)
         ↓
-🔄 SDF to PDB Conversion
-(Open Babel)
+🔄 Ligand Preparation
+• SDF → PDB Conversion (Open Babel)
+• Add Hydrogens
+• Assign Gasteiger Charges
+• Define Rotatable Bonds
+• Save as PDBQT
         ↓
-⚙️ Ligand Preparation
-(Add Hydrogens)
-(Add Gasteiger Charges)
-(Define Rotatable Bonds)
+📍 Binding Site Identification
+(Co-crystallized Ligand E20)
         ↓
-💾 Ligands Saved as PDBQT
+🧮 Center of Mass Calculation
+(PyMOL)
+• X = -1.624
+• Y = -50.091
+• Z = 2.056
         ↓
-📦 Grid Box Generation
-(Binding Site from
-Co-crystallized Ligand)
+📦 Grid Box Configuration
+(40 × 40 × 40 Å)
         ↓
 🎯 Molecular Docking
 (AutoDock Vina v1.2.4)
         ↓
-📊 Binding Affinity Analysis
+📊 Binding Affinity Extraction
         ↓
-🏆 Ranking of Compounds
-(EGCG > Quercetin >
-Curcumin > Resveratrol >
-DHA > EPA)
+🏆 Compound Ranking
+(EGCG > Quercetin > Curcumin >
+Resveratrol > DHA > EPA)
         ↓
 💊 ADMET Analysis
 (SwissADME)
         ↓
 📋 Drug-Likeness Evaluation
-(Lipinski Rule of Five)
-        ↓
-🌐 Pharmacokinetic Assessment
-(GI Absorption)
-(BBB Permeability)
-(Bioavailability)
-(P-gp Interaction)
+• Lipinski Rule of Five
+• Bioavailability
+• GI Absorption
+• BBB Permeability
+• P-gp Interaction
         ↓
 🥇 Lead Compound Selection
 (Quercetin)
         ↓
-🖼️ Protein-Ligand Visualization
+🖼️ Protein–Ligand Visualization
 (PyMOL)
         ↓
 📑 Result Interpretation
         ↓
 ✅ Conclusion
 ```
+
 
 
 * Binding site coordinates were determined from the co-crystallized ligand.
