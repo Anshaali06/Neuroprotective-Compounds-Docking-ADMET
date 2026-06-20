@@ -144,7 +144,9 @@ Grid Dimensions:
 * X = 40 Å
 * Y = 40 Å
 * Z = 40 Å
-    These parameters ensured that the active-site binding pocket and surrounding residues were adequately covered during molecular docking simulations.
+
+  
+These parameters ensured that the active-site binding pocket and surrounding residues were adequately covered during molecular docking simulations.
 
 ### 4. Molecular Docking
 
