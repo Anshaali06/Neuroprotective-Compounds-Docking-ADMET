@@ -77,8 +77,6 @@ foreach ($l in $ligands) {
 
 ## 6. Visualization (PyMOL)
 
-`## PyMOL Visualization
-
 ```pymol
 hide everything
 
