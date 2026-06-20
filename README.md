@@ -43,7 +43,9 @@ The following nutraceutical compounds were selected:
 * The prepared ligands were saved in PDBQT format for molecular docking studies.
 
 ## Computational Workflow
-'''text
+```text
+📚 Literature Review
+        ↓
 🎯 Target Selection
 (Acetylcholinesterase - PDB ID: 4EY7)
         ↓
@@ -111,7 +113,6 @@ DHA > EPA)
 ✅ Conclusion
 ```
 
-### 3. Grid Box Generation
 
 * Binding site coordinates were determined from the co-crystallized ligand.
 
