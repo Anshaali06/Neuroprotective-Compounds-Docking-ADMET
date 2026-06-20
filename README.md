@@ -121,19 +121,6 @@ PyMOL visualization confirmed that Quercetin occupies the active-site binding po
 * Quercetin emerged as the most promising lead compound due to its high GI absorption, zero Lipinski violations, and good bioavailability.
 
 
-
-## Visualization
-
-Docking poses were visualized using PyMOL.
-
-Visualization included:
-
-* Protein cartoon representation
-* Ligand stick representation
-* Binding pocket inspection
-* Active site interaction analysis
-
-
 ## Conclusion
 
 The computational study identified Quercetin, Curcumin, and EGCG as promising nutraceutical inhibitors of Acetylcholinesterase. Among these, Quercetin demonstrated the most balanced profile by combining strong binding affinity with favorable pharmacokinetic characteristics. These findings suggest that Quercetin may serve as a potential lead molecule for future experimental validation and drug development studies.
