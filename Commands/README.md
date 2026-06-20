@@ -43,7 +43,20 @@ obabel ligand.sdf -O ligand.pdb
 - Detect Root and Rotatable Bonds
 - Save as ligand.pdbqt
 
-## 4. Molecular Docking
+- ## 4. Grid Center Calculation (PyMOL)
+
+```pymol
+select ligand, resn E20
+print(cmd.centerofmass("ligand"))
+```
+
+Output:
+
+```text
+[-1.6241149361476006, -50.09128532940734, 2.0558886275481623]
+```
+
+## 5. Molecular Docking
 
 ### Batch Docking Script
 
@@ -54,7 +67,7 @@ $ligands = @(
 "EPA",
 "Resveratrol",
 "Quercetin",
-"EGCC"
+"EGCG"
 )
 
 foreach ($l in $ligands) {
@@ -62,7 +75,7 @@ foreach ($l in $ligands) {
 }
 ```
 
-## 5. Visualization (PyMOL)
+## 6. Visualization (PyMOL)
 
 ```pymol
 hide everything
