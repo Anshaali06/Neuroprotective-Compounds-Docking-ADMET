@@ -120,7 +120,7 @@ PyMOL visualization confirmed that Quercetin occupies the active-site binding po
 * Curcumin also showed strong binding affinity and favorable drug-likeness.
 * Quercetin emerged as the most promising lead compound due to its high GI absorption, zero Lipinski violations, and good bioavailability.
 
---
+
 
 ## Visualization
 
