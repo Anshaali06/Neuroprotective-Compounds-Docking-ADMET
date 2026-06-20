@@ -1,6 +1,51 @@
 # Commands Used
 
-## Batch Docking (PowerShell)
+## 1. Protein Preparation (PyMOL)
+
+```pymol
+remove solvent
+remove resn E20
+save 4EY7_clean.pdb
+```
+
+Output:
+
+```text
+Remove: eliminated 552 atoms in model "4EY7"
+Remove: eliminated 56 atoms in model "4EY7"
+```
+
+## 2. Receptor Preparation (AutoDock Tools)
+
+- Load 4EY7_clean.pdb
+- Edit → Hydrogens → Add → Polar Only
+- Edit → Charges → Compute Gasteiger
+- Grid → Macromolecule → Choose Molecule
+- Save as:
+
+```text
+4EY7_clean1.pdbqt
+```
+
+## 3. Ligand Preparation
+
+### Open Babel
+
+```powershell
+obabel ligand.sdf -O ligand.pdb
+```
+
+### AutoDock Tools
+
+- Load ligand.pdb
+- Add Hydrogens
+- Compute Gasteiger Charges
+- Detect Root and Rotatable Bonds
+- Save as ligand.pdbqt
+
+## 4. Molecular Docking
+
+### Batch Docking Script
 
 ```powershell
 $ligands = @(
@@ -13,12 +58,11 @@ $ligands = @(
 )
 
 foreach ($l in $ligands) {
-    Write-Host "Running $l ..."
     .\vina_1.2.4_win.exe --config config.txt --ligand "$l.pdbqt" --out "${l}_out.pdbqt"
 }
 ```
 
-## PyMOL Commands
+## 5. Visualization (PyMOL)
 
 ```pymol
 hide everything
@@ -35,8 +79,6 @@ select pocket, byres (4EY7_clean1 within 4 of Quercetin_out)
 show sticks, pocket
 color green, pocket
 
-hide labels
-
 set cartoon_transparency, 0.2
 
 bg_color white
@@ -44,10 +86,4 @@ bg_color white
 ray
 
 png Quercetin_Docking_Final.png, dpi=300
-```
-
-## Open Babel
-
-```powershell
-obabel ligand.sdf -O ligand.pdb
 ```
