@@ -4,7 +4,12 @@ An in-silico molecular docking and ADMET analysis study evaluating the binding a
 This project focuses on the computational screening of six neuroprotective compounds (DHA, EPA, Curcumin, Resveratrol, Quercetin, and EGCG) against Acetylcholinesterase (AChE), a key enzyme associated with neurotoxicity and neurodegenerative disorders.
 Molecular docking was performed using AutoDock Vina to evaluate the binding affinity of the selected compounds toward the target protein. The docking results were further supported by ADMET analysis to assess drug-likeness and pharmacokinetic properties. Protein–ligand interactions of Quercetin, the selected lead compound based on docking and ADMET analysis, were visualized using PyMOL.
 Comparative analysis identified EGCG as the strongest binder, followed by Quercetin and Curcumin. However, Quercetin demonstrated the most balanced profile when both docking performance and pharmacokinetic properties were considered.
-To identify potential natural inhibitors of Acetylcholinesterase (AChE) through molecular docking and pharmacokinetic analysis.
+## Objective
+
+The objective of this study was to identify potential natural inhibitors of Acetylcholinesterase (AChE), a key enzyme associated with pesticide-induced neurotoxicity and neurodegenerative disorders. Molecular docking was performed to evaluate the binding affinity of selected neuroprotective compounds, followed by ADMET analysis to assess their drug-likeness and pharmacokinetic properties. The study aimed to identify the most promising lead compound for further investigation based on both docking performance and pharmacological suitability.
+
+
+
 ## Materials
 ### Target Protein
 
@@ -28,7 +33,7 @@ The following nutraceutical compounds were selected:
 
 ### 1. Protein Preparation
 * The crystal structure of Acetylcholinesterase (PDB ID: 4EY7) was downloaded from the Protein Data Bank.
-* Water molecules and unwanted heteroatoms were removed.
+* Water molecules and unwanted heteroatoms were removed using PyMOL.
 * Polar hydrogen atoms were added using AutoDock Tools.
 *  Gasteiger charges were assigned to the receptor.
 * The prepared receptor was saved in PDBQT format for docking studies.
@@ -126,6 +131,8 @@ Resveratrol > DHA > EPA)
 
 
 ### 3. Grid Box Generation
+
+The docking search space was defined based on the coordinates of the co-crystallized ligand (E20) present in the crystal structure of Acetylcholinesterase (PDB ID: 4EY7). The center of mass of the native ligand was calculated using PyMOL and used to define the docking grid box.
 Grid Center:
 
 * X = -1.624
@@ -137,6 +144,7 @@ Grid Dimensions:
 * X = 40 Å
 * Y = 40 Å
 * Z = 40 Å
+    These parameters ensured that the active-site binding pocket and surrounding residues were adequately covered during molecular docking simulations.
 
 ### 4. Molecular Docking
 
@@ -223,31 +231,19 @@ The computational study identified Quercetin, Curcumin, and EGCG as promising nu
 * Molecular dynamics simulations
 * MM-PBSA/MM-GBSA binding energy calculations
 * In vitro validation studies
- ## References
-## References
+  
+ ##  Tool & Database References
 
-1. Trott O, Olson AJ. *AutoDock Vina: Improving the speed and accuracy of docking with a new scoring function, efficient optimization, and multithreading.* Journal of Computational Chemistry. 2010;31(2):455–461.
-   DOI: https://doi.org/10.1002/jcc.21334
+* AutoDock Vina: https://vina.scripps.edu/
+* AutoDock Tools (ADT): https://autodock.scripps.edu/
+* PyMOL: https://pymol.org/
+* SwissADME: https://www.swissadme.ch/
+* Open Babel: https://openbabel.org/
+* Protein Data Bank (PDB): https://www.rcsb.org/
+* PubChem: https://pubchem.ncbi.nlm.nih.gov/
 
-2. Morris GM, Huey R, Lindstrom W, Sanner MF, Belew RK, Goodsell DS, Olson AJ. *AutoDock4 and AutoDockTools4: Automated docking with selective receptor flexibility.* Journal of Computational Chemistry. 2009;30(16):2785–2791.
-   DOI: https://doi.org/10.1002/jcc.21256
 
-3. Daina A, Michielin O, Zoete V. *SwissADME: A free web tool to evaluate pharmacokinetics, drug-likeness and medicinal chemistry friendliness of small molecules.* Scientific Reports. 2017;7:42717.
-   DOI: https://doi.org/10.1038/srep42717
 
-4. O'Boyle NM, Banck M, James CA, Morley C, Vandermeersch T, Hutchison GR. *Open Babel: An Open Chemical Toolbox.* Journal of Cheminformatics. 2011;3:33.
-   DOI: https://doi.org/10.1186/1758-2946-3-33
-
-5. Schrödinger, LLC. *The PyMOL Molecular Graphics System.*
-   Website: https://pymol.org/
-
-6. Berman HM, Westbrook J, Feng Z, Gilliland G, Bhat TN, Weissig H, et al. *The Protein Data Bank.* Nucleic Acids Research. 2000;28(1):235–242.
-   DOI: https://doi.org/10.1093/nar/28.1.235
-   Database: https://www.rcsb.org/
-
-7. Kim S, Chen J, Cheng T, Gindulyte A, He J, He S, et al. *PubChem in 2021: New data content and improved web interfaces.* Nucleic Acids Research. 2021;49(D1):D1388–D1395.
-   DOI: https://doi.org/10.1093/nar/gkaa971
-   Database: https://pubchem.ncbi.nlm.nih.gov/
 
 
 
