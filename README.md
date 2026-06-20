@@ -1,8 +1,9 @@
 # Neuroprotective-Compounds-Docking-ADMET
 An in-silico molecular docking and ADMET analysis study evaluating the binding affinity of six neuroprotective compounds against a pesticide-induced neurotoxicity target protein (PDB ID: 4EY7).
 ## Project Overview
-This project focuses on the computational screening of six neuroprotective compounds (DHA, EPA, Curcumin, Resveratrol, Quercetin, and EGCG) against a pesticide-induced neurotoxicity target protein (PDB ID: 4EY7). Molecular docking was performed using AutoDock Vina to evaluate the binding affinity of the selected compounds toward the target protein. The docking results were further supported by ADMET analysis to assess the drug-likeness and pharmacokinetic properties of the compounds. Protein–ligand interactions of the top-performing candidate were visualized using PyMOL. Comparative analysis identified EGCG as the strongest binder, followed by Quercetin and Curcumin, highlighting their potential as neuroprotective candidates for further investigation.
-## Objective
+This project focuses on the computational screening of six neuroprotective compounds (DHA, EPA, Curcumin, Resveratrol, Quercetin, and EGCG) against Acetylcholinesterase (AChE), a key enzyme associated with neurotoxicity and neurodegenerative disorders.
+Molecular docking was performed using AutoDock Vina to evaluate the binding affinity of the selected compounds toward the target protein. The docking results were further supported by ADMET analysis to assess drug-likeness and pharmacokinetic properties. Protein–ligand interactions of Quercetin, the selected lead compound based on docking and ADMET analysis, were visualized using PyMOL.
+Comparative analysis identified EGCG as the strongest binder, followed by Quercetin and Curcumin. However, Quercetin demonstrated the most balanced profile when both docking performance and pharmacokinetic properties were considered.
 To identify potential natural inhibitors of Acetylcholinesterase (AChE) through molecular docking and pharmacokinetic analysis.
 ## Materials
 ### Target Protein
@@ -102,7 +103,15 @@ Top-performing compounds were analyzed using SwissADME for:
 | Lipinski Violations   | 2    | 0         | 0        |
 | Bioavailability Score | 0.17 | 0.55      | 0.55     |
 
+## Result Interpretation
 
+EGCG exhibited the strongest binding affinity toward AChE (-9.258 kcal/mol). However, ADMET analysis revealed limitations including low gastrointestinal absorption and two Lipinski rule violations.
+Quercetin demonstrated a strong binding affinity (-8.978 kcal/mol) together with favorable pharmacokinetic properties, including high GI absorption, zero Lipinski violations, and a bioavailability score of 0.55.
+Therefore, Quercetin was selected as the most promising lead compound for further visualization and analysis
+
+## Visualization
+Docked Complex Visualization
+PyMOL visualization confirmed that Quercetin occupies the active-site binding pocket of Acetylcholinesterase (PDB ID: 4EY7). The ligand was observed within the binding cavity and surrounded by active-site residues, supporting the docking results obtained from AutoDock Vina.
 
 ## Key Findings
 
