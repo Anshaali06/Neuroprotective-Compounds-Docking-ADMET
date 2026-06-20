@@ -43,7 +43,7 @@ The following nutraceutical compounds were selected:
 * The prepared ligands were saved in PDBQT format for molecular docking studies.
 
 ## Computational Workflow
-
+'''text
 🎯 Target Selection
 (Acetylcholinesterase - PDB ID: 4EY7)
         ↓
