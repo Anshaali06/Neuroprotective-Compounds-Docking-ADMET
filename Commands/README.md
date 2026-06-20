@@ -43,7 +43,7 @@ obabel ligand.sdf -O ligand.pdb
 - Detect Root and Rotatable Bonds
 - Save as ligand.pdbqt
 
-- ## 4. Grid Center Calculation (PyMOL)
+ ## 4. Grid Center Calculation (PyMOL)
 
 ```pymol
 select ligand, resn E20
